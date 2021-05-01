@@ -1,7 +1,7 @@
 
 1. Alice recebeu uma solicitação para averiguar se a conexão do servidor está disponível. Qual protocolo e comando que é utilizado para esta situação em ambos os sistemas operacionais: Microsoft Windows e GNU/Linux?
    * [ ] SNMP, get-service -name snmp e SNMP, snmpget
-   * [ ] ICMP, ping e ICMP, ping
+   * [X] ICMP, ping e ICMP, ping
    * [ ] ICMP, tracert e ICMP, traceroute
    * [ ] NTP, w32tm /resync e NTP, driftfile
 
