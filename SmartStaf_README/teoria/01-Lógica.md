@@ -19,7 +19,7 @@ Resposta: Escolheria a parte que mais impacta no funcionamento do sistema. Estab
 
 5. Como a Smart Staff ganha dinheiro?
 
-Resposta: 
+Resposta: A Smart Staff tem seus lucros atravez de outras empresas, que contrata seus serviços de recepção ao cliente e seus sistemas próprios para gestão de clientes.
 
 6. Você prefere enfrentar um coelho do tamanho de um rinoceronte, ou 87 rinocerantes do tamanho de um coelho? Justifique.
 
@@ -43,4 +43,4 @@ Resposta: A Melhor maneira seria o Macaco líder, deveria realizar a divisão de
 
 10. Na sua opinião, qual a melhor linguagem de programação e porque? E qual a pior e porque?
 
-Resposta: 
+Resposta: A melhor linguagem é JavaScript pois é de fácil aprendizagem e tem a versatilidade que possibilita construir sites do zero, e com uma sintaxe simples de código já é possível perceber resultados imediatos.
