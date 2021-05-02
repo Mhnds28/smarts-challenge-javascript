@@ -7,7 +7,7 @@
 
 2. Bob precisa encontrar no arquivo `/var/log/openvpn.log` um usuário chamado `h0ck$r`. Qual o comando completo que você aconselharia Bob a utilizar?
 
-Resposta: 
+Resposta: grep -R `h0ck$r` /var/log/openvpn.log
 
 3. Alice precisa agendar um script para que todos os dias, às 08 horas da manhã, seja executado no servidor GNU/Linux. Qual o serviço utilizado para tal agendamento?
    * [ ] Scheduling
