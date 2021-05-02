@@ -13,16 +13,16 @@ Resposta: grep -R `h0ck$r` /var/log/openvpn.log
    * [ ] Scheduling
    * [ ] Vim
    * [ ] Task
-   * [ ] Cron
+   * [X] Cron
 
 4. Bob não utilizará mais a pasta correspondente ao setor financeiro, porém, a Alice que é deste setor, precisa ser a nova proprietária dessa pasta. Qual o comando em GNU/Linux para essa tal finalidade?
    * [ ] chroot
    * [ ] chmod
-   * [ ] chown
+   * [X] chown
    * [ ] attrib
 
 5. Alice precisa alterar a permissão do arquivo somente para o proprietário e grupo como leitura e escrita e para os demais como somente leitura. Qual o comando utilizado e sua permissão?
    * [ ] chown 041
    * [ ] chown 664
-   * [ ] chmod 664
+   * [X] chmod 664
    * [ ] chmod 652
