@@ -48,4 +48,10 @@ Neste desafios existem vários conceitos/funcionalidades/detalhes de diferentes 
 
 # Documentação
 
+
+Aplicação do deploy atravez do site "app.infinityfree.net"
+
+Link para o projeto: http://cadastrodeclientes.epizy.com/cadastroCliente.html
+
+
 Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy em servidor de produção.
