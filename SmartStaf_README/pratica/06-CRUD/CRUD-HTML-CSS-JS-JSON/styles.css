@@ -131,7 +131,7 @@ table{
 	/*Botoes da tabela Excluir/Alterar*/
 	table button{
 		border-radius: 10px;
-		background-color: darkslategray;
+		background-color: rgb(15, 37, 37);
 		color: lightblue;
 		padding: 3px 15px;/*definindo tamanhos*/
 	}
