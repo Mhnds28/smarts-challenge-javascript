@@ -20,5 +20,3 @@ O resultado deve ser um array como o abaixo:
 Aplicação do deploy atravez do site "app.netlify.com"
 
 Link para o projeto: https://hungry-noether-2d51df.netlify.app
-
-Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy, se aplicável.
