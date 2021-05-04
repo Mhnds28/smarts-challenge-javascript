@@ -6,4 +6,9 @@ Faça um script/sistema, em qualquer linguagem de programação, que faça a inv
 
 # Documentação
 
-Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy, se aplicável.
+
+Aplicação do deploy atravez do site "app.netlify.com"
+
+Link para o projeto: https://festive-elion-8a0abe.netlify.app
+
+

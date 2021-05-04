@@ -8,4 +8,8 @@ Faça um script/sistema, em qualquer linguagem de programação, que junte/mescl
 
 # Documentação
 
+Aplicação do deploy atravez do site "app.netlify.com"
+
+Link para o projeto: https://optimistic-jennings-573358.netlify.app
+
 Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy, se aplicável.

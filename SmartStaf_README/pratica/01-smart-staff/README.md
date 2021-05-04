@@ -4,4 +4,7 @@ Faça um script/sistema, em qualquer linguagem de programação, que escreva tod
 
 # Documentação
 
-Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy, se aplicável.
+
+Aplicação do deploy atravez do site "app.netlify.com"
+
+Link para o projeto: https://kind-bartik-dab753.netlify.app
