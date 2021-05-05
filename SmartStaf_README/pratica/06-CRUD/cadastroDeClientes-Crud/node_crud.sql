@@ -1,14 +1,10 @@
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `name` varchar(150) NOT NULL,
-  `email` varchar(150) NOT NULL,
-  `phone_no` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS USER (
+id int(11) NOT NULL AUTO_INCREMENT,
+name varchar(90) DEFAULT NULL,
+age int(3) DEFAULT NULL,
+PRIMARY KEY (id)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
-COMMIT;
-
+INSERT INTO user (id, name, age) VALUES
+(1, "Thais", 18);
+COMMIT; 
