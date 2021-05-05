@@ -1,52 +1,102 @@
-# Desafio
 
-Faça um script/sistema, em qualquer linguagem de programação, que ofereça funções CRUD (**C**reate, **R**ead, **U**pdate e **D**elete).
+--------------------------------------------------------------------------
+|             CRUD usando NodeJS / ExpressJS / MySQL          |
+--------------------------------------------------------------------------
 
-# Contexto
+Step 1 : Instale nodejs em seu sistema e execute o seguinte comentário
+			npm init
+		
+Step 2 : Instale pacotes Requred usando NPM
 
-Com o crescimento do mercado imobiliário nos últimos 10 anos, diversos sistemas para incorporadoras/construtoras foram criados ao longo do tempo, cada um com um propósito específico.
+			npm install --save express mysql body-parser ejs
+			npm install -g nodemon (optional - used to run app.js automatically while any file content changes)
+		
+Step 3 : Adicione o seguinte código em app.js
+		
+			const path = require('path');
+			const express = require('express');
+			const ejs = require('ejs');
+			const bodyParser = require('body-parser');
+			const mysql = require('mysql');
+			const app = express();
 
-Com isso surgiu a necessidade de criar um novo software, unindo as funcionalidades de todos os anteriores, para uma utilização mais simples e rápida.
+			// Escuta do servidor
+			app.listen(3000, () => {
+				console.log('Server is running at port 3000');
+			});
+			
+			nodemon app (OR) npm start
+		
+Step 4 : Criar conexão de banco de dados
 
-# Desafio
+			const mysql=require('mysql');
+			
+			const connection=mysql.createConnection({
+			  host:'localhost',
+			  user:'root',
+			  password:'',
+			  database:'node_crud'
+			});
+			
+			connection.connect(function(error){
+			  if(!!error) console.log(error);
+			  else console.log('Database Connected!');
+			}); 
 
-É aí que você entra!
+Setp 5 : Definir view engin com ejs / public path / view files path / bodyParser
 
-Sua missão é criar uma parte deste novo sistema.
+			//set views file
+			app.set('views',path.join(__dirname,'views'));
+			
+			//set view engine
+			app.set('view engine', 'ejs');
+			app.use(bodyParser.json());
+			app.use(bodyParser.urlencoded({ extended: false }));
 
-## Frontend
+Setp 6 : Defina o caminho do índice com '/' e arquivo HTML
+			
+			//route for user index page
+			app.get('/',(req, res) => {
+				res.render('user_index', {
+					title: 'CRUD Operation using NodeJS / ExpressJS / MySQL '
+				});
+			});
 
-Deve ser criado o frontend para consumir o backend/API, contendo:
+Setp 7 : Execute um servidor e verifique com o navegador
 
- - Tela inicial, com a listagem dos registros (colunas de exibição ao seu critério)
-   - Filtros de busca por `data de início`e `data de término`
-   - Ordenação por `menor budget`, `maior budget`, `A-Z` e `Z-A`
-   - Paginação
- - Tela para cadastro e edição
- - Exclusão
- - O visual/interface é ao seu critério
+			npm start (OR) nodemon app
 
-## Backend/API
-
-Deve ser criado o backend/API, para fazer o processamento dos dados e regra de negócio.
-
-A paginação, ordenação e filtragem deves ser feitos preferencialmente na API.
-
-## Banco de dados
-
-Os dados devem ser armazenados em algum local.
-
-Como exemplo de estrutura e massa de dados, o JSON de nome `exemplo.json`, nesta mesma pasta, deve ser utilizado. Converta-o para o banco de dados utilizado.
-
-Possuímos preferência por banco de dados MySQL (caso seja utilizado, informar na documentação como importar o banco de dados, como configuração a conexão e fornecer também o arquivo SQL com a estrutura/dados utilizados).
-
-Porém, caso não possua familiaridade com MySQL, é possível utilizar quaisquer outras tecnologias, até mesmo o próprio JSON.
-
-# Observações
-
-Neste desafios existem vários conceitos/funcionalidades/detalhes de diferentes níveis, acreditamos que o entendimento do conceito geral é o mais importante, portanto não tem problema entregar este teste sem alguns conceitos, funcionalidades e/ou alguns detalhes.
-
-# Documentação
+			http://localhost:3000/
+			
 
 
-Atualize este README sobre como rodar em desenvolvimento e como efetuar o deploy em servidor de produção.
+ -------------------------------------------------------
+|             Processo de Deploy          |
+--------------------------------------------------------
+
+Step 1 : Acesse o site Heroku.com 
+		Create new app
+		Heroku Git
+		Instale o Heroku CLI
+		Instale o Git
+
+Step 2 : Adicione os comandos do heroku no terminal cmd.
+		1-heroku login	
+		2-cd myproject/
+		3-git init
+		4-heroku git:remote -a myapp
+
+Step 3 : Fazendo o Deploy
+		1-git add .
+		2-git commit -am "make it better"
+		3-git push heroku master
+
+Step 4 : Deploy do Banco de Dados
+		1-add-ons
+		2-cleardb
+		3-Installed add-ons
+		4-Configure Add-ons
+		5-Settings 
+		6-DATABASE_URL 
+
+Step 5: Copie a URL e connect em seu script node.js. 
