@@ -1,3 +1,5 @@
+Dados do HOST: 
+
 user:b6ed02d1514f1f
 password: dd07cefe
 host: us-cdbr-east-03.cleardb.com/
