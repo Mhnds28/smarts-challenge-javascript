@@ -1,3 +1,3 @@
 # smarts-challenge-javascript
 
-Projeto SmartStaff
+Aplicações feitas em NodeJS / ExpressJS / MySQL. 
